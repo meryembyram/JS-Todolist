@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" href="icon.png">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-5">
+                <h1>My To Do List</h1>
+                <div id="date" class="date"></div>
+                <input id="input" type="text" placeholder="What Do You Want to Do...">
+                <button onclick="addToElement()" class="addButton" id="addBtn"><i class="fas fa-plus"></i></button>
+                <img src="img.png" alt="" style="height: 250px; width: 450px;">
+            </div>
+            <div class="col-md-7">
+                <button onclick="deleteAllTasks()" class="deleteAll" id="deleteBtn">Delete All</button>
+                <ul id="list">
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

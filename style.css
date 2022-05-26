@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.col-md-5{
+	position: relative;
+    height: 100vh;
+	background-color:#fbb5df;
+}
+
+.col-md-7{
+    position: relative;
+    height: 100vh;
+	background-color: #fbc3e5;
+}
+h1{
+    font-family: 'Montserrat', sans-serif;
+    color:white;
+    font-size: 50px;
+    text-align: center;
+    text-shadow:2px 7px #f76cc0;
+    padding-bottom: 20px;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+.date{
+    text-align: center;
+    padding: 5px;
+    color: #c55699;
+    font-size: 16px;
+    margin-bottom: 50px;
+    border: 1px solid whitesmoke;
+    background: #fde1f2;
+    border-radius: 8px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+input{
+    display: inline-block;
+    width: 85%;
+    padding: 10px;
+    background: #fde1f2;
+    border: 0;
+    outline: 0;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 20px;
+    color:black;
+    padding-bottom: 10px;
+}
+.addButton{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    color: white;
+    background-color: #c55699;
+    border: none;
+    outline: none;
+    font-size: 22px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-left: 5px;
+    opacity: 0.6;
+    pointer-events: none;
+}
+.addButton.active{
+    opacity: 1;
+    pointer-events: auto;
+    border:none;
+}
+img{
+    margin-left: 5px;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type:none;
+}
+ul li{
+    list-style: none;
+    height: 45px;
+    line-height: 45px;
+    position: relative;
+    background: #fde1f2;
+    border-radius: 8px;
+    width: 70%;
+    margin-bottom: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+    cursor: default;
+    overflow: hidden;
+    font-size: 20px;
+}
+ul li.checked {
+    color: black;
+    text-decoration: line-through;
+}
+ul li.checked::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+}
+ul li span{
+    position: absolute;
+    right: -45px;
+    color: white;
+    width: 45px;
+    text-align: center;
+    background: #c55699;
+    border-radius: 0 8px 8px 0;
+    transition: all 0.3s ease;
+}
+ul li:hover span{
+    right: 0px;
+}
+.deleteAll{
+    color: white;
+    background-color: #c55699;
+    border: none;
+    outline: none;
+    margin: 10px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 14px;
+    padding: 8px;
+    opacity: 0.6;
+    pointer-events: none;
+}
+.deleteAll.active{
+    opacity: 1;
+    pointer-events: auto;
+    border:none;
+}
